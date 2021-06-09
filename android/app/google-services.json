@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "26999289168",
-    "project_id": "car-clean-5309d",
-    "storage_bucket": "car-clean-5309d.appspot.com"
+    "project_number": "492046314720",
+    "project_id": "carcleanfinal",
+    "storage_bucket": "carcleanfinal.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:26999289168:android:88ed5ec54b1d248a8ee855",
+        "mobilesdk_app_id": "1:492046314720:android:cf876e6ecd0c35554c7485",
         "android_client_info": {
-          "package_name": "kz.finalproject.car_clean"
+          "package_name": "kz.diplom.carclean"
         }
       },
       "oauth_client": [
         {
-          "client_id": "26999289168-udakn2mv4t7ki9md2fa71p168be9p2rj.apps.googleusercontent.com",
+          "client_id": "492046314720-i2khgqvhafbucj4umdo7dcbnc9g0l8of.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBvGA1z-OaAlgbiQNidhalg8Zshqe7v-Ck"
+          "current_key": "AIzaSyAeP--w9gT2gjALiBaofhCJdjvXcsQ9AmA"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "26999289168-udakn2mv4t7ki9md2fa71p168be9p2rj.apps.googleusercontent.com",
+              "client_id": "492046314720-i2khgqvhafbucj4umdo7dcbnc9g0l8of.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

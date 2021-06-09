@@ -12,11 +12,11 @@ class MyCars extends StatefulWidget {
 
 class _MyCarsState extends State<MyCars> {
   final carList = [
-    {'image': 'assets/bmw-x7.jpg', 'name': 'BMW X7', 'number': 'ABC 007'},
+    {'image': 'assets/bmw8.jpeg', 'name': 'BMW 8', 'number': '007 KAZ 02'},
     {
-      'image': 'assets/mercedes-s-class.jpg',
-      'name': 'Mercedes Benz S Class',
-      'number': 'ABC 007'
+      'image': 'assets/CAMRY.jpeg',
+      'name': 'Toyota Camry',
+      'number': '002 DAU 02'
     }
   ];
 

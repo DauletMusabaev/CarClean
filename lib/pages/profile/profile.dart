@@ -35,14 +35,14 @@ class Profile extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50.0),
                   image: DecorationImage(
-                    image: AssetImage('assets/user.jpg'),
+                    image: AssetImage('assets/user.jpeg'),
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
               heightSpace,
               Text(
-                'Ellison Perry',
+                'Mussabayev Daulet',
                 style: black18BoldTextStyle,
               ),
             ],
@@ -60,7 +60,7 @@ class Profile extends StatelessWidget {
                 ),
                 heightSpace,
                 Text(
-                  '123456789',
+                  '7777777777',
                   style: grey14MediumTextStyle,
                 ),
                 height5Space,
@@ -77,7 +77,7 @@ class Profile extends StatelessWidget {
                 ),
                 heightSpace,
                 Text(
-                  'ellison@test.com',
+                  'daulet@gmail.com',
                   style: grey14MediumTextStyle,
                 ),
                 height5Space,

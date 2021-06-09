@@ -11,27 +11,27 @@ class MyBooking extends StatefulWidget {
 class _MyBookingState extends State<MyBooking> {
   final bookingList = [
     {
-      'image': 'assets/service_provider/provider_1.jpg',
-      'providerName': 'Perfect Car Wash Services',
-      'address': '105, Apple Square, New york',
-      'car': 'BMW X7',
-      'dateTime': '10:00 AM, 20 Feb 2021',
+      'image': 'assets/service_provider/provider3.jpeg',
+      'providerName': 'TI Detailing Studio',
+      'address': '18, Navoi, Almaty',
+      'car': 'CAMRY55',
+      'dateTime': '10:00 AM, 12 June 2021',
       'services': 'Interier Cleaning, Engine Detailing',
       'status': 'uncomplete'
     },
     {
-      'image': 'assets/service_provider/provider_2.jpg',
-      'providerName': 'Quicky Car Wash Services',
-      'address': '115, Opera Hub, New york',
-      'car': 'Mercedes E Class',
-      'dateTime': '04:00 PM, 30 March 2021',
+      'image': 'assets/service_provider/carwash.jpeg',
+      'providerName': 'LUX Services',
+      'address': '38, Sain, Almaty',
+      'car': 'Camry',
+      'dateTime': '13:00 PM, 13 June 2021',
       'services': 'Body Wash',
       'status': 'complete'
     },
     {
-      'image': 'assets/service_provider/provider_3.jpg',
-      'providerName': 'Speedy Car Services',
-      'address': 'G-8, My Honest Hub, New york',
+      'image': 'assets/service_provider/provider.jpeg',
+      'providerName': 'Alatau cleaning',
+      'address': '8, Zheltoksan, Almaty',
       'car': 'Volvo S90',
       'dateTime': '02:00 PM,  02 April 2021',
       'services': 'Body Wash, Interier Cleaning',

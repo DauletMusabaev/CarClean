@@ -10,9 +10,9 @@ class MyAddress extends StatefulWidget {
 
 class _MyAddressState extends State<MyAddress> {
   final addressList = [
-    {'type': 'home', 'address': '121, Yogi Villa, Opera Street, New York.'},
-    {'type': 'work', 'address': '121, Yogi Villa, Opera Street, New York.'},
-    {'type': 'other', 'address': '121, Yogi Villa, Opera Street, New York.'}
+    {'type': 'home', 'address': '121, Makataeva, Seifullina Street, Almaty.'},
+    {'type': 'work', 'address': '73, Gagarina, Abaya Street, Almaty.'},
+    {'type': 'other', 'address': '40, Abylaikhan, Tole bi Street, Almaty.'}
   ];
   @override
   Widget build(BuildContext context) {

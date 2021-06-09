@@ -39,7 +39,7 @@ class _LoginState extends State<Login> {
     return Container(
       decoration: BoxDecoration(
         image: DecorationImage(
-            image: AssetImage('assets/bg.jpg'), fit: BoxFit.cover),
+            image: AssetImage('assets/log.jpeg'), fit: BoxFit.cover),
       ),
       child: Stack(
         children: <Widget>[

@@ -10,14 +10,14 @@ class Favorites extends StatefulWidget {
 class _FavoritesState extends State<Favorites> {
   final favoriteList = [
     {
-      'image': 'assets/service_provider/provider_1.jpg',
+      'image': 'assets/service_provider/carwash.jpeg',
       'name': 'Perfect Car Wash Services',
-      'address': '104, Apple Square, New York.'
+      'address': '104, Abay street, Almaty.'
     },
     {
-      'image': 'assets/service_provider/provider_3.jpg',
+      'image': 'assets/service_provider/carwash2.jpeg',
       'name': 'Quicky Car Services',
-      'address': 'G-9, Opera Canter, New York.'
+      'address': 'G-9, Manas street, Almaty.'
     }
   ];
   @override

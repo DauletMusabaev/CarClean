@@ -11,15 +11,15 @@ class SelectCar extends StatefulWidget {
 }
 
 class _SelectCarState extends State<SelectCar> {
-  String selectedCar = 'BMW X7';
+  String selectedCar = 'CAMRY';
   final carList = [
     {
-      'name': 'BMW X7',
-      'image': 'assets/bmw-x7.jpg',
+      'name': 'CAMRY55',
+      'image': 'assets/CAMRY.jpeg',
     },
     {
-      'name': 'Mercedes Benz S Class',
-      'image': 'assets/mercedes-s-class.jpg',
+      'name': 'Camry',
+      'image': 'assets/redcamry.jpeg',
     }
   ];
   @override

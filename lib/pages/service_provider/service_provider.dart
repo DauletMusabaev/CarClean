@@ -112,7 +112,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(
-                              'assets/service_provider/provider_1.jpg'),
+                              'assets/service_provider/carwash.jpeg'),
                           fit: BoxFit.cover,
                         ),
                       ),
