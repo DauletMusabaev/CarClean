@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 import 'package:car_clean/constant/constant.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class Register extends StatefulWidget {
   @override
@@ -69,7 +70,7 @@ class _RegisterState extends State<Register> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 20.0),
                       child: Text(
-                        'Register',
+                        'Регистрация',
                         style: white36BoldTextStyle,
                       ),
                     ),
@@ -77,7 +78,7 @@ class _RegisterState extends State<Register> {
                     Padding(
                       padding: EdgeInsets.only(left: 20.0),
                       child: Text(
-                        'Create account',
+                        'Создать аккаунт',
                         style: white14MediumTextStyle,
                       ),
                     ),
@@ -116,7 +117,7 @@ class _RegisterState extends State<Register> {
                           controller: _passwordController,
                           decoration: InputDecoration(
                             contentPadding: EdgeInsets.only(left: 20.0),
-                            hintText: 'Password',
+                            hintText: 'Придумайте пароль',
                             hintStyle: white14MediumTextStyle,
                             border: InputBorder.none,
                           ),
@@ -137,7 +138,7 @@ class _RegisterState extends State<Register> {
                           controller: _passwordConfirmController,
                           decoration: InputDecoration(
                             contentPadding: EdgeInsets.only(left: 20.0),
-                            hintText: 'Confirm Password',
+                            hintText: 'Подтвердите пароль',
                             hintStyle: white14MediumTextStyle,
                             border: InputBorder.none,
                           ),
@@ -167,10 +168,19 @@ class _RegisterState extends State<Register> {
                                         child: Home()));
                               }
                             } catch (e) {
+                              Fluttertoast.showToast(
+                                msg: 'Введите правильную почту',
+                                backgroundColor: Colors.white,
+                                textColor: blackColor,
+                              );
                               print(e);
                             }
                           } else {
-                            print('\n\nPasswords do not match\n\n');
+                            Fluttertoast.showToast(
+                              msg: 'Пароли не совпадают',
+                              backgroundColor: Colors.white,
+                              textColor: blackColor,
+                            );
                           }
                         },
                         child: Container(
@@ -191,7 +201,7 @@ class _RegisterState extends State<Register> {
                           ),
                           alignment: Alignment.center,
                           child: Text(
-                            'Continue',
+                            'Продолжить',
                             style: white18BoldTextStyle,
                           ),
                         ),

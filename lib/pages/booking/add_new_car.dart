@@ -25,7 +25,7 @@ class _AddNewCarState extends State<AddNewCar> {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'Add New Car',
+          'Добавить новую машину',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -76,7 +76,7 @@ class _AddNewCarState extends State<AddNewCar> {
               child: TextField(
                 style: black16BoldTextStyle,
                 decoration: InputDecoration(
-                  hintText: "Enter car brand name",
+                  hintText: "Введите марку машины",
                   hintStyle: grey16BoldTextStyle,
                   fillColor: Colors.white,
                   filled: true,
@@ -109,7 +109,7 @@ class _AddNewCarState extends State<AddNewCar> {
               child: TextField(
                 style: black16BoldTextStyle,
                 decoration: InputDecoration(
-                  hintText: "Enter car model",
+                  hintText: "Введите модель машины",
                   hintStyle: grey16BoldTextStyle,
                   fillColor: Colors.white,
                   filled: true,
@@ -142,7 +142,7 @@ class _AddNewCarState extends State<AddNewCar> {
               child: TextField(
                 style: black16BoldTextStyle,
                 decoration: InputDecoration(
-                  hintText: "Enter car number",
+                  hintText: "Введите номер машины",
                   hintStyle: grey16BoldTextStyle,
                   fillColor: Colors.white,
                   filled: true,
@@ -179,7 +179,7 @@ class _AddNewCarState extends State<AddNewCar> {
                     borderRadius: BorderRadius.circular(20.0),
                     color: primaryColor),
                 child: Text(
-                  'Add Car',
+                  'Добавить машину',
                   style: white18BoldTextStyle,
                 ),
               ),
@@ -200,7 +200,7 @@ class _AddNewCarState extends State<AddNewCar> {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: fixPadding * 2.0),
           child: Text(
-            'Select color',
+            'Выбрать цвет',
             style: black18BoldTextStyle,
           ),
         ),
@@ -274,7 +274,7 @@ class _AddNewCarState extends State<AddNewCar> {
                           width: width,
                           padding: EdgeInsets.all(10.0),
                           child: Text(
-                            'Choose Option',
+                            'Выберите опцию',
                             textAlign: TextAlign.center,
                             style: black18BoldTextStyle,
                           ),
@@ -298,7 +298,7 @@ class _AddNewCarState extends State<AddNewCar> {
                                 SizedBox(
                                   width: 10.0,
                                 ),
-                                Text('Camera', style: black16MediumTextStyle),
+                                Text('Камера', style: black16MediumTextStyle),
                               ],
                             ),
                           ),
@@ -323,7 +323,7 @@ class _AddNewCarState extends State<AddNewCar> {
                                   width: 10.0,
                                 ),
                                 Text(
-                                  'Upload from Gallery',
+                                  'Загрузить с галереии',
                                   style: black16MediumTextStyle,
                                 ),
                               ],

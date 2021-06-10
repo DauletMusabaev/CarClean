@@ -49,7 +49,7 @@ class _SelectPaymentMethodState extends State<SelectPaymentMethod> {
                       height: 20.0,
                     ),
                     Text(
-                      "Success!",
+                      "Удачно!",
                       style: grey18BoldTextStyle,
                       textAlign: TextAlign.center,
                     ),
@@ -81,7 +81,7 @@ class _SelectPaymentMethodState extends State<SelectPaymentMethod> {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'Select Payment Method',
+          'Выберите способ оплаты',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -102,7 +102,7 @@ class _SelectPaymentMethodState extends State<SelectPaymentMethod> {
             color: primaryColor,
             alignment: Alignment.center,
             child: Text(
-              'Continue',
+              'Продолжить',
               style: white18BoldTextStyle,
             ),
           ),
@@ -117,7 +117,7 @@ class _SelectPaymentMethodState extends State<SelectPaymentMethod> {
               crossAxisAlignment: CrossAxisAlignment.center,
               children: [
                 Text(
-                  'Pay:',
+                  'Оплатить:',
                   style: primaryColor18BoldTextStyle,
                 ),
                 width5Space,
@@ -128,12 +128,12 @@ class _SelectPaymentMethodState extends State<SelectPaymentMethod> {
               ],
             ),
           ),
-          paymentTile(Icons.credit_card_rounded, 'Card'),
+          paymentTile(Icons.credit_card_rounded, 'Карта'),
           heightSpace,
           heightSpace,
           //paymentTile('assets/payment/paypal.png', 'Paypal'),
           heightSpace,
-          paymentTile(Icons.attach_money, 'Cash'),
+          paymentTile(Icons.attach_money, 'Наличные'),
         ],
       ),
     );

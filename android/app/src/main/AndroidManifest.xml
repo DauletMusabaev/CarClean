@@ -3,7 +3,7 @@
   <uses-permission android:name="android.permission.INTERNET" />
    <application
         android:label="CarClean"
-        android:icon="@mipmap/launcher_icon">
+        android:icon="@mipmap/car_wash">
        <meta-data android:name="com.google.android.geo.API_KEY"
            android:value="AIzaSyD_5UAqgaNP9ENfuQsKOIm_7hQ6E2JEzkY"/>
         <activity

@@ -1,4 +1,5 @@
 import 'dart:io';
+// import 'dart:math';
 
 import 'package:car_clean/constant/constant.dart';
 import 'package:car_clean/pages/screens.dart';
@@ -7,6 +8,7 @@ import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:google_maps_flutter/google_maps_flutter.dart';
 import 'package:page_transition/page_transition.dart';
+// import 'package:firebase_database/firebase_database.dart';
 
 class Home extends StatefulWidget {
   @override
@@ -18,91 +20,91 @@ class _HomeState extends State<Home> {
   DateTime currentBackPressTime;
   final serviceProviderList = [
     {
-      'name': 'TI Detailing ',
-      'address': 'Navoi 18, Almaty.',
-      'locationLat': 43.225849,
-      'locationLang': 76.900057,
-      'image': 'assets/service_provider/provider3.jpeg',
-      'cost': '50',
-      'rating': '4.5',
-      'distance': '3.5 km',
-      'heroTag': 'hero_1'
-    },
-    {
       'name': 'LUX Services ',
-      'address': 'Sain 38, Almaty.',
+      'address': 'Абай 38, Алматы.',
       'locationLat': 43.237356,
       'locationLang': 76.877568,
       'image': 'assets/service_provider/carwash.jpeg',
-      'cost': '50',
+      'cost': '10',
       'rating': '4.5',
-      'distance': '3.5 km',
+      'distance': '3.5 км',
       'heroTag': 'hero_2'
     },
     {
-      'name': 'Cool ',
-      'address': 'Saina 36, Almaty.',
-      'locationLat': 43.209618,
-      'locationLang': 76.840685,
-      'image': 'assets/service_provider/carwash1.jpeg',
-      'cost': '50',
-      'rating': '4.5',
-      'distance': '3.5 km',
-      'heroTag': 'hero_3'
-    },
-    {
-      'name': 'Shine Wash ',
-      'address': 'Dostyk 157, Almaty.',
-      'locationLat': 43.241545,
-      'locationLang': 76.927701,
-      'image': 'assets/service_provider/provider.jpeg',
-      'cost': '50',
-      'rating': '4.5',
-      'distance': '3.5 km',
-      'heroTag': 'hero_4'
-    },
-    {
-      'name': 'Perfect Wash ',
-      'address': 'Satpayev 51, Almaty.',
-      'locationLat': 43.254611,
-      'locationLang': 76.942204,
-      'image': 'assets/service_provider/provider_1.jpg',
-      'cost': '50',
-      'rating': '4.5',
-      'distance': '3.5 km',
-      'heroTag': 'hero_5'
-    },
-    {
-      'name': 'Wash ',
-      'address': 'Abay 56, Almaty.',
-      'locationLat': 43.256674,
-      'locationLang': 76.960526,
-      'image': 'assets/service_provider/provider_3.jpg',
-      'cost': '50',
-      'rating': '4.5',
-      'distance': '3.5 km',
-      'heroTag': 'hero_6'
+      'name': 'TI Detailing ',
+      'address': 'Жарокова 18, Алматы.',
+      'locationLat': 43.225849,
+      'locationLang': 76.900057,
+      'image': 'assets/service_provider/provider3.jpeg',
+      'cost': '10',
+      'rating': '5',
+      'distance': '3.5 км',
+      'heroTag': 'hero_1'
     },
     {
       'name': 'Shik ',
-      'address': 'Raiymbek 45, Almaty.',
-      'locationLat': 43.230321,
-      'locationLang': 76.953834,
-      'image': 'assets/service_provider/carwash.jpeg',
-      'cost': '50',
+      'address': 'Сатпаев 167, Алматы.',
+      'locationLat': 43.209618,
+      'locationLang': 76.840685,
+      'image': 'assets/service_provider/carwash1.jpeg',
+      'cost': '10',
       'rating': '4.5',
-      'distance': '3.5 km',
-      'heroTag': 'hero_7'
+      'distance': '3.5 км',
+      'heroTag': 'hero_3'
+    },
+    {
+      'name': 'Keruen ',
+      'address': 'Байтурсынов 157, Алматы.',
+      'locationLat': 43.241545,
+      'locationLang': 76.927701,
+      'image': 'assets/service_provider/provider.jpeg',
+      'cost': '10',
+      'rating': '4',
+      'distance': '3.5 км',
+      'heroTag': 'hero_4'
+    },
+    {
+      'name': 'Shine Wash ',
+      'address': 'Толе би 51, Алматы.',
+      'locationLat': 43.254611,
+      'locationLang': 76.942204,
+      'image': 'assets/service_provider/provider_1.jpg',
+      'cost': '10',
+      'rating': '5',
+      'distance': '3.5 км',
+      'heroTag': 'hero_5'
     },
     {
       'name': 'Ceramic ',
-      'address': 'Baitursynov 38, Almaty.',
+      'address': 'Абдуллиных 56, Алматы.',
+      'locationLat': 43.256674,
+      'locationLang': 76.960526,
+      'image': 'assets/service_provider/provider_3.jpg',
+      'cost': '10',
+      'rating': '4.5',
+      'distance': '3.5 км',
+      'heroTag': 'hero_6'
+    },
+    {
+      'name': 'VIP ',
+      'address': 'Мендикулова 45, Алматы.',
+      'locationLat': 43.230321,
+      'locationLang': 76.953834,
+      'image': 'assets/service_provider/carwash.jpeg',
+      'cost': '10',
+      'rating': '4.5',
+      'distance': '3.5 км',
+      'heroTag': 'hero_7'
+    },
+    {
+      'name': 'Wash ',
+      'address': 'Елеубекова 38, Алматы.',
       'locationLat': 43.226443,
       'locationLang': 76.965086,
       'image': 'assets/service_provider/provider.jpeg',
-      'cost': '50',
+      'cost': '10',
       'rating': '4.5',
-      'distance': '3.5 km',
+      'distance': '3.5 км',
       'heroTag': 'hero_8'
     }
   ];
@@ -118,6 +120,10 @@ class _HomeState extends State<Home> {
   @override
   void initState() {
     super.initState();
+
+    // DatabaseReference _testRef = FirebaseDatabase.instance.reference().child("test");
+    // _testRef.set("Hello world ${Random().nextInt(100)}");
+
     serviceProviderList.forEach((element) {
       allMarkers.add(Marker(
           markerId: MarkerId(element['name']),
@@ -262,7 +268,7 @@ class _HomeState extends State<Home> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                'Distance',
+                                'Дистанция',
                                 style: grey12RegularTextStyle,
                               ),
                               height5Space,
@@ -277,7 +283,7 @@ class _HomeState extends State<Home> {
                             crossAxisAlignment: CrossAxisAlignment.center,
                             children: [
                               Text(
-                                'Cost',
+                                'Стоимость',
                                 style: grey12RegularTextStyle,
                               ),
                               height5Space,
@@ -298,7 +304,7 @@ class _HomeState extends State<Home> {
                               ),
                             ),
                             child: Text(
-                              'Book now',
+                              'Забронировать',
                               style: black12RegularTextStyle,
                             ),
                           ),
@@ -336,7 +342,7 @@ class _HomeState extends State<Home> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: <Widget>[
                     Text(
-                      'Are you sure want to logout?',
+                      'Вы уверены то хотите выйти?',
                       style: black14BoldTextStyle,
                       textAlign: TextAlign.center,
                     ),
@@ -361,7 +367,7 @@ class _HomeState extends State<Home> {
                               color: whiteColor,
                             ),
                             child: Text(
-                              'Cancel',
+                              'Отмена',
                               style: black16MediumTextStyle,
                             ),
                           ),
@@ -384,7 +390,7 @@ class _HomeState extends State<Home> {
                               color: primaryColor,
                             ),
                             child: Text(
-                              'Logout',
+                              'Выйти',
                               style: white16MediumTextStyle,
                             ),
                           ),
@@ -464,7 +470,7 @@ class _HomeState extends State<Home> {
         now.difference(currentBackPressTime) > Duration(seconds: 2)) {
       currentBackPressTime = now;
       Fluttertoast.showToast(
-        msg: 'Press Back Once Again to Exit.',
+        msg: 'Нажмите еще раз чтобы выйти.',
         backgroundColor: Colors.black,
         textColor: whiteColor,
       );
@@ -506,16 +512,27 @@ class _HomeState extends State<Home> {
                   width: 100.0,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(50.0),
+                    image: DecorationImage(
+                      image: AssetImage('assets/user/user_1.jpg'),
+                      fit: BoxFit.cover,
+                    ),
                   ),
-                  child: Icon(
-                    Icons.person_outline_rounded,
-                    size: 100,
-                  ),
+                  // child: Icon(
+                  //   Icons.person_outline_rounded,
+                  //   size: 100,
+                  // ),
                 ),
                 height5Space,
-                Text(
-                  _auth.currentUser.email.toString(),
-                  style: black14RegularTextStyle,
+                InkWell(
+                  child: Text(_auth.currentUser.email.toString(), style: black14RegularTextStyle,),
+                  onTap: () {
+                    Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                        builder: (context) => Profile(),
+                      ),
+                    );
+                  },
                 ),
               ],
             ),
@@ -527,7 +544,7 @@ class _HomeState extends State<Home> {
                 color: blackColor,
               ),
               title: Text(
-                'Home',
+                'Главная',
                 style: black14RegularTextStyle,
               ),
             ),
@@ -545,7 +562,7 @@ class _HomeState extends State<Home> {
                 color: blackColor,
               ),
               title: Text(
-                'My Booking',
+                'Мои брони',
                 style: black14RegularTextStyle,
               ),
             ),
@@ -563,7 +580,7 @@ class _HomeState extends State<Home> {
                 color: blackColor,
               ),
               title: Text(
-                'Favorites',
+                'Избранные',
                 style: black14RegularTextStyle,
               ),
             ),
@@ -581,7 +598,7 @@ class _HomeState extends State<Home> {
                 color: blackColor,
               ),
               title: Text(
-                'My Address',
+                'Мой адрес',
                 style: black14RegularTextStyle,
               ),
             ),
@@ -599,7 +616,7 @@ class _HomeState extends State<Home> {
                 color: blackColor,
               ),
               title: Text(
-                'Contact us',
+                'Свяжитесь с нами',
                 style: black14RegularTextStyle,
               ),
             ),
@@ -617,7 +634,7 @@ class _HomeState extends State<Home> {
                 color: blackColor,
               ),
               title: Text(
-                'Settings',
+                'Настройки',
                 style: black14RegularTextStyle,
               ),
             ),
@@ -628,7 +645,7 @@ class _HomeState extends State<Home> {
                 color: primaryColor,
               ),
               title: Text(
-                'Logout',
+                'Выйти',
                 style: primaryColor14RegularTextStyle,
               ),
             ),

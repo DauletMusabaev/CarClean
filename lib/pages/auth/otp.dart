@@ -49,7 +49,7 @@ class _OTPScreenState extends State<OTPScreen> {
                       ),
                       SizedBox(height: 25.0),
                       Text(
-                        'Please Wait..',
+                        'Подождите..',
                         style: grey14MediumTextStyle,
                       ),
                     ],
@@ -257,7 +257,7 @@ class _OTPScreenState extends State<OTPScreen> {
                         InkWell(
                           onTap: () {},
                           child: Text(
-                            'Resend',
+                            'Переотправить',
                             style: white18BoldTextStyle,
                           ),
                         ),
@@ -289,7 +289,7 @@ class _OTPScreenState extends State<OTPScreen> {
                         ),
                         alignment: Alignment.center,
                         child: Text(
-                          'Submit',
+                          'Загрузить',
                           style: white18BoldTextStyle,
                         ),
                       ),

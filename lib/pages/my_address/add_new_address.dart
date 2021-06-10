@@ -38,7 +38,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
         backgroundColor: Colors.transparent,
         elevation: 0.0,
         title: Text(
-          'Add new address',
+          'Добавить адрес',
           style: appBarTextStyle,
         ),
         centerTitle: true,
@@ -78,7 +78,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                     ),
                     heightSpace,
                     heightSpace,
-                    Text('Type your Address', style: black18BoldTextStyle),
+                    Text('Напишите ваш адрес', style: black18BoldTextStyle),
                     heightSpace,
                     Container(
                       width: width,
@@ -96,7 +96,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                           style: black16MediumTextStyle,
                           decoration: InputDecoration(
                             contentPadding: EdgeInsets.all(15.0),
-                            hintText: 'Type your address here',
+                            hintText: 'Напишите ваш адрес',
                             hintStyle: grey16MediumTextStyle,
                             border: InputBorder.none,
                             focusedBorder: InputBorder.none,
@@ -125,7 +125,7 @@ class _AddNewAddressState extends State<AddNewAddress> {
                             color: primaryColor,
                           ),
                           child: Text(
-                            'Add new Address',
+                            'Добавить адрес',
                             style: white16MediumTextStyle,
                           ),
                         ),

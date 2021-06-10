@@ -1,5 +1,6 @@
 import 'package:car_clean/constant/constant.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 
 class ContactUs extends StatefulWidget {
   @override
@@ -16,7 +17,7 @@ class _ContactUsState extends State<ContactUs> {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'Contact us',
+          'Свяжитесь с нами',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -42,7 +43,7 @@ class _ContactUsState extends State<ContactUs> {
                 style: black16MediumTextStyle,
                 keyboardType: TextInputType.text,
                 decoration: InputDecoration(
-                  hintText: "Name",
+                  hintText: "Имя",
                   hintStyle: grey16MediumTextStyle,
                   fillColor: Colors.white,
                   filled: true,
@@ -77,7 +78,7 @@ class _ContactUsState extends State<ContactUs> {
                 style: black16MediumTextStyle,
                 keyboardType: TextInputType.emailAddress,
                 decoration: InputDecoration(
-                  hintText: "Email address",
+                  hintText: "Email",
                   hintStyle: grey16MediumTextStyle,
                   fillColor: Colors.white,
                   filled: true,
@@ -110,7 +111,7 @@ class _ContactUsState extends State<ContactUs> {
               maxLines: 5,
               style: black16MediumTextStyle,
               decoration: InputDecoration(
-                hintText: "Write here",
+                hintText: "Напишите здесь",
                 hintStyle: grey16MediumTextStyle,
                 fillColor: Colors.white,
                 filled: true,
@@ -137,7 +138,13 @@ class _ContactUsState extends State<ContactUs> {
             padding: EdgeInsets.symmetric(horizontal: fixPadding * 2.0),
             child: InkWell(
               borderRadius: BorderRadius.circular(20.0),
-              onTap: () {
+              onTap: () async {
+                Fluttertoast.showToast(
+                  msg: 'Успешно отправлено',
+                  backgroundColor: Colors.grey,
+                  textColor: blackColor,
+                );
+                await Future.delayed(const Duration(seconds: 1), (){});
                 Navigator.pop(context);
               },
               child: Container(
@@ -148,7 +155,7 @@ class _ContactUsState extends State<ContactUs> {
                     borderRadius: BorderRadius.circular(20.0),
                     color: primaryColor),
                 child: Text(
-                  'Submit',
+                  'Отправить',
                   style: white18BoldTextStyle,
                 ),
               ),

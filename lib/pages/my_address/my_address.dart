@@ -10,7 +10,7 @@ class MyAddress extends StatefulWidget {
 
 class _MyAddressState extends State<MyAddress> {
   final addressList = [
-    {'type': 'home', 'address': '121, Makataeva, Seifullina Street, Almaty.'},
+    {'type': 'home', 'address': '121,  Макатаева, улица Сейфуллина, Алматы.'},
     {'type': 'work', 'address': '73, Gagarina, Abaya Street, Almaty.'},
     {'type': 'other', 'address': '40, Abylaikhan, Tole bi Street, Almaty.'}
   ];
@@ -23,7 +23,7 @@ class _MyAddressState extends State<MyAddress> {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'My Address',
+          'Мой адрес',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -52,7 +52,7 @@ class _MyAddressState extends State<MyAddress> {
             color: primaryColor,
             alignment: Alignment.center,
             child: Text(
-              'Add new address',
+              'Добавить адрес',
               style: white18BoldTextStyle,
             ),
           ),

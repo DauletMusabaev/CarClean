@@ -11,7 +11,7 @@ class BookingDetails extends StatelessWidget {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'Booking Details',
+          'Больше информации',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -34,7 +34,7 @@ class BookingDetails extends StatelessWidget {
             color: primaryColor,
             alignment: Alignment.center,
             child: Text(
-              'Cancel Booking',
+              'Отменить бронь',
               style: white18BoldTextStyle,
             ),
           ),
@@ -64,18 +64,18 @@ class BookingDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Service Provider Detail',
+            'Сведения о поставщике услуг',
             style: primaryColor18BoldTextStyle,
           ),
           heightSpace,
           heightSpace,
           Text(
-            'Perfect Car Wash Service',
+            'TI Detailing',
             style: black16MediumTextStyle,
           ),
           height5Space,
           Text(
-            '104, Apple Square, New York.',
+            '18, Жарокова, Алматы.',
             style: black14RegularTextStyle,
           ),
         ],
@@ -91,7 +91,7 @@ class BookingDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Car Detail',
+            'Сведения о машине',
             style: primaryColor18BoldTextStyle,
           ),
           heightSpace,
@@ -101,12 +101,12 @@ class BookingDetails extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Car Model:',
+                'Модель машины:',
                 style: black14BoldTextStyle,
               ),
               width5Space,
               Text(
-                'BMW X7',
+                'Camry',
                 style: black14RegularTextStyle,
               ),
             ],
@@ -117,12 +117,12 @@ class BookingDetails extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Car Number:',
+                'Номер машины:',
                 style: black14BoldTextStyle,
               ),
               width5Space,
               Text(
-                'XYZ 007',
+                '787 PFA 02',
                 style: black14RegularTextStyle,
               ),
             ],
@@ -140,18 +140,18 @@ class BookingDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Date & Time Detail',
+            'Сведения о времени и дате',
             style: primaryColor18BoldTextStyle,
           ),
           heightSpace,
           heightSpace,
           Text(
-            '22 Feb, 2021',
+            '12 Jun, 2021',
             style: black16MediumTextStyle,
           ),
           height5Space,
           Text(
-            '10:00 AM',
+            '05:00 PM',
             style: black14RegularTextStyle,
           ),
         ],
@@ -167,7 +167,7 @@ class BookingDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Services',
+            'Услуги',
             style: primaryColor18BoldTextStyle,
           ),
           heightSpace,
@@ -177,12 +177,12 @@ class BookingDetails extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Engine Detailing',
+                'Мойка авто',
                 style: black14MediumTextStyle,
               ),
               width5Space,
               Text(
-                '\$85',
+                '\$10',
                 style: black14MediumTextStyle,
               ),
             ],
@@ -193,7 +193,7 @@ class BookingDetails extends StatelessWidget {
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
-                'Body Wash',
+                'Детализация двигателя',
                 style: black14MediumTextStyle,
               ),
               width5Space,
@@ -216,12 +216,12 @@ class BookingDetails extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           Text(
-            'Total Amount',
+            'Сумма',
             style: black18BoldTextStyle,
           ),
           width5Space,
           Text(
-            '\$135',
+            '\$60',
             style: primaryColor22BoldTextStyle,
           ),
         ],

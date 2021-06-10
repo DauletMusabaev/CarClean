@@ -31,7 +31,7 @@ class _SelectCarState extends State<SelectCar> {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'Select Car',
+          'Выбрать машину',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -60,7 +60,7 @@ class _SelectCarState extends State<SelectCar> {
             color: primaryColor,
             alignment: Alignment.center,
             child: Text(
-              'Continue',
+              'Продолжить',
               style: white18BoldTextStyle,
             ),
           ),
@@ -180,7 +180,7 @@ class _SelectCarState extends State<SelectCar> {
                         color: whiteColor,
                         alignment: Alignment.center,
                         child: Text(
-                          'Add new car',
+                          'Добавить новую машину',
                           style: black16BoldTextStyle,
                         ),
                       ),

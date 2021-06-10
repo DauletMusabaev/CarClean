@@ -11,13 +11,13 @@ class _FavoritesState extends State<Favorites> {
   final favoriteList = [
     {
       'image': 'assets/service_provider/carwash.jpeg',
-      'name': 'Perfect Car Wash Services',
-      'address': '104, Abay street, Almaty.'
+      'name': 'LUX Services',
+      'address': '38, Абай, Алматы.'
     },
     {
-      'image': 'assets/service_provider/carwash2.jpeg',
-      'name': 'Quicky Car Services',
-      'address': 'G-9, Manas street, Almaty.'
+      'image': 'assets/service_provider/provider.jpeg',
+      'name': 'Keruen',
+      'address': '157, Байтурсынов, Алматы.'
     }
   ];
   @override
@@ -29,7 +29,7 @@ class _FavoritesState extends State<Favorites> {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'Favorites',
+          'Избранные',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -53,7 +53,7 @@ class _FavoritesState extends State<Favorites> {
                   ),
                   heightSpace,
                   Text(
-                    'No item in favorite',
+                    'Список избранных пуст',
                     style: grey20BoldTextStyle,
                   ),
                 ],
@@ -75,7 +75,7 @@ class _FavoritesState extends State<Favorites> {
                             : 0.0,
                       ),
                       child: IconSlideAction(
-                        caption: 'Delete',
+                        caption: 'Удалить',
                         color: Colors.red,
                         icon: Icons.delete,
                         onTap: () {
@@ -85,7 +85,7 @@ class _FavoritesState extends State<Favorites> {
 
                           // Then show a snackbar.
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
-                            content: Text('Provider Removed from Favorite'),
+                            content: Text('Провайдер удалил с избранных'),
                           ));
                         },
                       ),

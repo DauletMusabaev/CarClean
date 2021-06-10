@@ -18,7 +18,7 @@ class _SettingsState extends State<Settings> {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'Settings',
+          'Настройки',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -38,7 +38,7 @@ class _SettingsState extends State<Settings> {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'About',
+                  'Относительно',
                   style: black14RegularTextStyle,
                 ),
                 SizedBox(height: 10.0),
@@ -50,7 +50,7 @@ class _SettingsState extends State<Settings> {
                             type: PageTransitionType.rightToLeft,
                             child: PrivacyPolicy()));
                   },
-                  child: settingTile('Privacy policy'),
+                  child: settingTile('Политика конфиденциальности'),
                 ),
                 InkWell(
                   onTap: () {
@@ -60,25 +60,37 @@ class _SettingsState extends State<Settings> {
                             type: PageTransitionType.rightToLeft,
                             child: TermsOfUse()));
                   },
-                  child: settingTile('Terms of use'),
+                  child: settingTile('Условия эксплуатации'),
                 ),
                 SizedBox(height: 30.0),
                 Text(
-                  'App',
+                  'Приложение',
                   style: black14RegularTextStyle,
                 ),
                 SizedBox(height: 10.0),
                 InkWell(
-                  onTap: () {},
-                  child: settingTile('Support'),
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        PageTransition(
+                            type: PageTransitionType.rightToLeft,
+                            child: ContactUs()));
+                  },
+                  child: settingTile('Поддержка'),
+                ),
+                InkWell(
+                  onTap: () {
+                    Navigator.push(
+                        context,
+                        PageTransition(
+                            type: PageTransitionType.rightToLeft,
+                            child: ContactUs()));
+                  },
+                  child: settingTile('Сообщит об ошибке'),
                 ),
                 InkWell(
                   onTap: () {},
-                  child: settingTile('Report a bug'),
-                ),
-                InkWell(
-                  onTap: () {},
-                  child: settingTile('App version 1.0'),
+                  child: settingTile('Версия 1.0'),
                 ),
               ],
             ),

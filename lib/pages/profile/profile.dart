@@ -11,7 +11,7 @@ class Profile extends StatelessWidget {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'Profile',
+          'Профиль',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -35,14 +35,14 @@ class Profile extends StatelessWidget {
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(50.0),
                   image: DecorationImage(
-                    image: AssetImage('assets/user.jpeg'),
+                    image: AssetImage('assets/user/user_1.jpg'),
                     fit: BoxFit.cover,
                   ),
                 ),
               ),
               heightSpace,
               Text(
-                'Mussabayev Daulet',
+                'Мусабаев Даулет',
                 style: black18BoldTextStyle,
               ),
             ],
@@ -55,7 +55,7 @@ class Profile extends StatelessWidget {
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(
-                  'Phone number',
+                  'Номер телефона',
                   style: black16BoldTextStyle,
                 ),
                 heightSpace,
@@ -78,6 +78,23 @@ class Profile extends StatelessWidget {
                 heightSpace,
                 Text(
                   'daulet@gmail.com',
+                  style: grey14MediumTextStyle,
+                ),
+                height5Space,
+                Container(
+                  width: double.infinity,
+                  height: 1.0,
+                  color: greyColor.withOpacity(0.7),
+                ),
+                heightSpace,
+                heightSpace,
+                Text(
+                  'Машина',
+                  style: black16BoldTextStyle,
+                ),
+                heightSpace,
+                Text(
+                  'Toyota Camry 2017 Black',
                   style: grey14MediumTextStyle,
                 ),
                 height5Space,

@@ -5,9 +5,9 @@ import 'package:horizontal_calendar_widget/date_helper.dart';
 import 'package:horizontal_calendar_widget/horizontal_calendar.dart';
 import 'package:page_transition/page_transition.dart';
 
-const labelMonth = 'Month';
-const labelDate = 'Date';
-const labelWeekDay = 'Week Day';
+const labelMonth = 'Месяц';
+const labelDate = 'Дата';
+const labelWeekDay = 'День недели';
 
 class SelectDateTime extends StatefulWidget {
   int total;
@@ -95,29 +95,29 @@ class _SelectDateTimeState extends State<SelectDateTime> {
 
   String convertNumberMonthToStringMonth(month) {
     if (month == 1) {
-      monthString = 'January';
+      monthString = 'Январь';
     } else if (month == 2) {
-      monthString = 'Fabruary';
+      monthString = 'Февраль';
     } else if (month == 3) {
-      monthString = 'March';
+      monthString = 'Март';
     } else if (month == 4) {
-      monthString = 'April';
+      monthString = 'Апрель';
     } else if (month == 5) {
-      monthString = 'May';
+      monthString = 'Май';
     } else if (month == 6) {
-      monthString = 'June';
+      monthString = 'Июнь';
     } else if (month == 7) {
-      monthString = 'July';
+      monthString = 'Июль';
     } else if (month == 8) {
-      monthString = 'August';
+      monthString = 'Август';
     } else if (month == 9) {
-      monthString = 'September';
+      monthString = 'Сентябрь';
     } else if (month == 10) {
-      monthString = 'October';
+      monthString = 'Октябрь';
     } else if (month == 11) {
-      monthString = 'November';
+      monthString = 'Ноябрь';
     } else if (month == 12) {
-      monthString = 'December';
+      monthString = 'Декабрь';
     }
     return monthString;
   }
@@ -131,7 +131,7 @@ class _SelectDateTimeState extends State<SelectDateTime> {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'Select Date & Time',
+          'Выберите дату и время',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -160,7 +160,7 @@ class _SelectDateTimeState extends State<SelectDateTime> {
             color: primaryColor,
             alignment: Alignment.center,
             child: Text(
-              'Continue',
+              'Продолжить',
               style: white18BoldTextStyle,
             ),
           ),
@@ -255,7 +255,7 @@ class _SelectDateTimeState extends State<SelectDateTime> {
         Padding(
           padding: EdgeInsets.all(fixPadding * 2.0),
           child: Text(
-            '11 Slots',
+            '11 слотов',
             style: black18BoldTextStyle,
           ),
         ),

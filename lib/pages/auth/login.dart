@@ -76,7 +76,7 @@ class _LoginState extends State<Login> {
                     Padding(
                       padding: EdgeInsets.only(top: 20.0, left: 20.0),
                       child: Text(
-                        'Welcome back',
+                        'Добро пожаловать!',
                         style: white36BoldTextStyle,
                       ),
                     ),
@@ -84,7 +84,7 @@ class _LoginState extends State<Login> {
                     Padding(
                       padding: EdgeInsets.only(left: 20.0),
                       child: Text(
-                        'Login in to your account',
+                        'Войти в ваш аккаунт',
                         style: white14MediumTextStyle,
                       ),
                     ),
@@ -124,7 +124,7 @@ class _LoginState extends State<Login> {
                           controller: _passwordController,
                           decoration: InputDecoration(
                             contentPadding: EdgeInsets.only(left: 20.0),
-                            hintText: 'Password',
+                            hintText: 'Пароль',
                             hintStyle: white14MediumTextStyle,
                             border: InputBorder.none,
                           ),
@@ -173,7 +173,7 @@ class _LoginState extends State<Login> {
                           ),
                           alignment: Alignment.center,
                           child: Text(
-                            'Login',
+                            'Далее',
                             style: white18BoldTextStyle,
                           ),
                         ),
@@ -211,7 +211,7 @@ class _LoginState extends State<Login> {
                           // ),
                           alignment: Alignment.center,
                           child: Text(
-                            'Create a new account',
+                            'Создать аккаунт',
                             style: white18BoldTextStyle,
                           ),
                         ),
@@ -224,68 +224,68 @@ class _LoginState extends State<Login> {
                     //   style: white18MediumTextStyle,
                     // ),
                     SizedBox(height: 30.0),
-                    // Padding(
-                    //   padding: EdgeInsets.all(20.0),
-                    //   child: InkWell(
-                    //     borderRadius: BorderRadius.circular(30.0),
-                    //     onTap: () {},
-                    //     child: Container(
-                    //       padding: EdgeInsets.all(15.0),
-                    //       alignment: Alignment.center,
-                    //       decoration: BoxDecoration(
-                    //         borderRadius: BorderRadius.circular(30.0),
-                    //         color: Color(0xFF3B5998),
-                    //       ),
-                    //       child: Row(
-                    //         mainAxisAlignment: MainAxisAlignment.center,
-                    //         crossAxisAlignment: CrossAxisAlignment.center,
-                    //         children: <Widget>[
-                    //           Image.asset(
-                    //             'assets/facebook.png',
-                    //             height: 25.0,
-                    //             fit: BoxFit.fitHeight,
-                    //           ),
-                    //           SizedBox(width: 10.0),
-                    //           Text(
-                    //             'Log in with Facebook',
-                    //             style: white14MediumTextStyle,
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
-                    // Padding(
-                    //   padding: EdgeInsets.all(20.0),
-                    //   child: InkWell(
-                    //     borderRadius: BorderRadius.circular(30.0),
-                    //     onTap: () {},
-                    //     child: Container(
-                    //       padding: EdgeInsets.all(15.0),
-                    //       alignment: Alignment.center,
-                    //       decoration: BoxDecoration(
-                    //         borderRadius: BorderRadius.circular(30.0),
-                    //         color: Colors.white,
-                    //       ),
-                    //       child: Row(
-                    //         mainAxisAlignment: MainAxisAlignment.center,
-                    //         crossAxisAlignment: CrossAxisAlignment.center,
-                    //         children: <Widget>[
-                    //           Image.asset(
-                    //             'assets/google.png',
-                    //             height: 25.0,
-                    //             fit: BoxFit.fitHeight,
-                    //           ),
-                    //           SizedBox(width: 10.0),
-                    //           Text(
-                    //             'Log in with Google',
-                    //             style: black14MediumTextStyle,
-                    //           ),
-                    //         ],
-                    //       ),
-                    //     ),
-                    //   ),
-                    // ),
+                    Padding(
+                      padding: EdgeInsets.all(20.0),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(30.0),
+                        onTap: () {},
+                        child: Container(
+                          padding: EdgeInsets.all(15.0),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(30.0),
+                            color: Color(0xFF3B5998),
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Image.asset(
+                                'assets/facebook.png',
+                                height: 25.0,
+                                fit: BoxFit.fitHeight,
+                              ),
+                              SizedBox(width: 10.0),
+                              Text(
+                                'Log in with Facebook',
+                                style: white14MediumTextStyle,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
+                    Padding(
+                      padding: EdgeInsets.all(20.0),
+                      child: InkWell(
+                        borderRadius: BorderRadius.circular(30.0),
+                        onTap: () {},
+                        child: Container(
+                          padding: EdgeInsets.all(15.0),
+                          alignment: Alignment.center,
+                          decoration: BoxDecoration(
+                            borderRadius: BorderRadius.circular(30.0),
+                            color: Colors.white,
+                          ),
+                          child: Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.center,
+                            children: <Widget>[
+                              Image.asset(
+                                'assets/google.png',
+                                height: 25.0,
+                                fit: BoxFit.fitHeight,
+                              ),
+                              SizedBox(width: 10.0),
+                              Text(
+                                'Log in with Google',
+                                style: black14MediumTextStyle,
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+                    ),
                   ],
                 ),
               ),
@@ -309,7 +309,7 @@ class _LoginState extends State<Login> {
         now.difference(currentBackPressTime) > Duration(seconds: 2)) {
       currentBackPressTime = now;
       Fluttertoast.showToast(
-        msg: 'Press Back Once Again to Exit.',
+        msg: 'Нажмите еще раз чтобы выйти.',
         backgroundColor: Colors.black,
         textColor: whiteColor,
       );

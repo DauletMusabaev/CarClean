@@ -13,30 +13,30 @@ class _MyBookingState extends State<MyBooking> {
     {
       'image': 'assets/service_provider/provider3.jpeg',
       'providerName': 'TI Detailing Studio',
-      'address': '18, Navoi, Almaty',
-      'car': 'CAMRY55',
-      'dateTime': '10:00 AM, 12 June 2021',
-      'services': 'Interier Cleaning, Engine Detailing',
-      'status': 'uncomplete'
-    },
-    {
-      'image': 'assets/service_provider/carwash.jpeg',
-      'providerName': 'LUX Services',
-      'address': '38, Sain, Almaty',
+      'address': '18, Жарокова, Алматы.',
       'car': 'Camry',
-      'dateTime': '13:00 PM, 13 June 2021',
-      'services': 'Body Wash',
-      'status': 'complete'
-    },
-    {
-      'image': 'assets/service_provider/provider.jpeg',
-      'providerName': 'Alatau cleaning',
-      'address': '8, Zheltoksan, Almaty',
-      'car': 'Volvo S90',
-      'dateTime': '02:00 PM,  02 April 2021',
-      'services': 'Body Wash, Interier Cleaning',
+      'dateTime': '05:00 pM, 12 Июнь 2021',
+      'services': 'Уборка салона, Детализация двигателя',
       'status': 'uncomplete'
-    }
+    },
+    // {
+    //   'image': 'assets/service_provider/carwash.jpeg',
+    //   'providerName': 'LUX Services',
+    //   'address': '38, Абай, Алматы',
+    //   'car': 'Camry',
+    //   'dateTime': '11:00 PM, 13 Июнь 2021',
+    //   'services': 'Мойка авто',
+    //   'status': 'complete'
+    // },
+    // {
+    //   'image': 'assets/service_provider/provider.jpeg',
+    //   'providerName': 'Keruen ',
+    //   'address': '157, Байтурсынов, Алматы',
+    //   'car': 'Volvo S90',
+    //   'dateTime': '12:00 PM,  14 Июнь 2021',
+    //   'services': 'Мойка авто, Уборка салона',
+    //   'status': 'uncomplete'
+    // }
   ];
   @override
   Widget build(BuildContext context) {
@@ -47,7 +47,7 @@ class _MyBookingState extends State<MyBooking> {
         elevation: 1.0,
         backgroundColor: whiteColor,
         title: Text(
-          'My Booking',
+          'Мои брони',
           style: appBarTextStyle,
         ),
         leading: IconButton(
@@ -118,7 +118,7 @@ class _MyBookingState extends State<MyBooking> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Car:',
+                              'Машина:',
                               style: black14BoldTextStyle,
                             ),
                             width5Space,
@@ -134,7 +134,7 @@ class _MyBookingState extends State<MyBooking> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Date & Time:',
+                              'Время и дата:',
                               style: black14BoldTextStyle,
                             ),
                             width5Space,
@@ -150,7 +150,7 @@ class _MyBookingState extends State<MyBooking> {
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Text(
-                              'Services:',
+                              'Услуги:',
                               style: black14BoldTextStyle,
                             ),
                             width5Space,
@@ -201,8 +201,8 @@ class _MyBookingState extends State<MyBooking> {
                                 ),
                                 child: Text(
                                   (item['status'] == 'complete')
-                                      ? 'Rate Now'
-                                      : 'More Details',
+                                      ? 'Оценить'
+                                      : 'Больше инфы',
                                   style: black14MediumTextStyle,
                                 ),
                               ),

@@ -32,16 +32,16 @@ class _ServiceProviderState extends State<ServiceProvider> {
   calculateTotal() {
     total = 0;
     if (bodyWash) {
-      total = total + 50;
+      total = total + 10;
     }
     if (interiorCleaning) {
-      total = total + 80;
+      total = total + 30;
     }
     if (engineDetailing) {
-      total = total + 90;
+      total = total + 50;
     }
     if (lightService) {
-      total = total + 70;
+      total = total + 30;
     }
     setState(() {
       total = total;
@@ -72,7 +72,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                   color: primaryColor,
                   alignment: Alignment.center,
                   child: Text(
-                    'Book now (\$$total)',
+                    'Забронировать (\$$total)',
                     style: white18BoldTextStyle,
                   ),
                 ),
@@ -112,7 +112,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                       decoration: BoxDecoration(
                         image: DecorationImage(
                           image: AssetImage(
-                              'assets/service_provider/carwash.jpeg'),
+                              'assets/service_provider/provider3.jpeg'),
                           fit: BoxFit.cover,
                         ),
                       ),
@@ -142,12 +142,12 @@ class _ServiceProviderState extends State<ServiceProvider> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Perfect Wash ',
+            'TI Detailing ',
             style: black18BoldTextStyle,
           ),
           heightSpace,
           Text(
-            'Abay 77, Almaty',
+            'Жароков 18, Алматы',
             style: grey14MediumTextStyle,
           ),
           heightSpace,
@@ -156,10 +156,30 @@ class _ServiceProviderState extends State<ServiceProvider> {
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Text(
-                '4.5',
+                '5',
                 style: black14RegularTextStyle,
               ),
               width5Space,
+              Icon(
+                Icons.star,
+                color: Colors.lime,
+                size: 18.0,
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.lime,
+                size: 18.0,
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.lime,
+                size: 18.0,
+              ),
+              Icon(
+                Icons.star,
+                color: Colors.lime,
+                size: 18.0,
+              ),
               Icon(
                 Icons.star,
                 color: Colors.lime,
@@ -203,7 +223,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                   alignment: Alignment.center,
                   color: (services) ? primaryColor : whiteColor,
                   child: Text(
-                    'Services',
+                    'Услуги ',
                     style: (services)
                         ? white14BoldTextStyle
                         : black14BoldTextStyle,
@@ -230,7 +250,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                   alignment: Alignment.center,
                   color: (about) ? primaryColor : whiteColor,
                   child: Text(
-                    'About',
+                    'Относительно',
                     style:
                         (about) ? white14BoldTextStyle : black14BoldTextStyle,
                   ),
@@ -318,12 +338,12 @@ class _ServiceProviderState extends State<ServiceProvider> {
                             heightSpace,
                             height5Space,
                             Text(
-                              'Body Wash',
+                              'Мойка авто',
                               style: black14BoldTextStyle,
                             ),
                             heightSpace,
                             Text(
-                              '\$50',
+                              '\$10',
                               style: black18BoldTextStyle,
                             ),
                           ],
@@ -415,12 +435,12 @@ class _ServiceProviderState extends State<ServiceProvider> {
                             heightSpace,
                             height5Space,
                             Text(
-                              'Interior Cleaning',
+                              'Уборка салона ',
                               style: black14BoldTextStyle,
                             ),
                             heightSpace,
                             Text(
-                              '\$80',
+                              '\$30',
                               style: black18BoldTextStyle,
                             ),
                           ],
@@ -519,12 +539,12 @@ class _ServiceProviderState extends State<ServiceProvider> {
                             heightSpace,
                             height5Space,
                             Text(
-                              'Engine Detailing',
+                              'Осмотр двигателя',
                               style: black14BoldTextStyle,
                             ),
                             heightSpace,
                             Text(
-                              '\$90',
+                              '\$50',
                               style: black18BoldTextStyle,
                             ),
                           ],
@@ -614,12 +634,12 @@ class _ServiceProviderState extends State<ServiceProvider> {
                             heightSpace,
                             height5Space,
                             Text(
-                              'Light Service',
+                              'Оптика',
                               style: black14BoldTextStyle,
                             ),
                             heightSpace,
                             Text(
-                              '\$70',
+                              '\$30',
                               style: black18BoldTextStyle,
                             ),
                           ],
@@ -668,18 +688,18 @@ class _ServiceProviderState extends State<ServiceProvider> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            'Opening Hours',
+            'Время работы',
             style: black18BoldTextStyle,
           ),
           height5Space,
           Text(
-            'Open now (09:00 AM - 22:00 PM)',
+            'Открыты сейчас (09:00 AM - 22:00 PM)',
             style: primaryColor12RegularTextStyle,
           ),
           heightSpace,
           heightSpace,
           Text(
-            'About',
+            'Относительно ',
             style: black18BoldTextStyle,
           ),
           heightSpace,
@@ -691,7 +711,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
           heightSpace,
           heightSpace,
           Text(
-            'Location',
+            'Локация',
             style: black18BoldTextStyle,
           ),
           heightSpace,
