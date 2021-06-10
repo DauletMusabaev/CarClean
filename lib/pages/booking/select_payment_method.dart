@@ -3,6 +3,8 @@ import 'package:car_clean/pages/screens.dart';
 import 'package:flutter/material.dart';
 
 class SelectPaymentMethod extends StatefulWidget {
+  int total;
+  SelectPaymentMethod({this.total});
   @override
   _SelectPaymentMethodState createState() => _SelectPaymentMethodState();
 }
@@ -120,7 +122,7 @@ class _SelectPaymentMethodState extends State<SelectPaymentMethod> {
                 ),
                 width5Space,
                 Text(
-                  '\$50',
+                  "\$${widget.total}",
                   style: black18MediumTextStyle,
                 ),
               ],

@@ -10,6 +10,8 @@ const labelDate = 'Date';
 const labelWeekDay = 'Week Day';
 
 class SelectDateTime extends StatefulWidget {
+  int total;
+  SelectDateTime({this.total});
   @override
   _SelectDateTimeState createState() => _SelectDateTimeState();
 }
@@ -148,7 +150,7 @@ class _SelectDateTimeState extends State<SelectDateTime> {
               context,
               PageTransition(
                 type: PageTransitionType.rightToLeft,
-                child: SelectPaymentMethod(),
+                child: SelectPaymentMethod(total: widget.total),
               ),
             );
           },

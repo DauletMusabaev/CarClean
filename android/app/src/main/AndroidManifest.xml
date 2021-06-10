@@ -4,6 +4,8 @@
    <application
         android:label="CarClean"
         android:icon="@mipmap/launcher_icon">
+       <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyD_5UAqgaNP9ENfuQsKOIm_7hQ6E2JEzkY"/>
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
@@ -38,7 +40,5 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
-        <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="AIzaSyDuzRRLWR8gdIua8hUmKPfg9fmTFZxwF28"/>
     </application>
 </manifest>

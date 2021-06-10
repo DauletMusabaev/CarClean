@@ -62,7 +62,7 @@ class _ServiceProviderState extends State<ServiceProvider> {
                     context,
                     PageTransition(
                       type: PageTransitionType.rightToLeft,
-                      child: SelectDateTime(),
+                      child: SelectDateTime(total: this.total,),
                     ),
                   );
                 },
